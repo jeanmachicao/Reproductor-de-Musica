@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+body{
+    background-color: #266064;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-contenedor{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0em 2em 0em;
+}
+
+.imagen-contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagen{
+    border-radius: 55%;
+    width: 65%;
+    animation-name: girar;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+
+@keyframes girar{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.titulo{
+    font-family: 'Klee-One', cursive;
+    font-size: xx-large;
+    color: black;
+    margin-top: 0.8em;
+}
+
+button{
+    background-color: #C0F9FE;
+    color: black;
+    font-family: 'Permanent Marker';
+    margin-top: 1em;
+    padding: 1em 1.5em 1em 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
